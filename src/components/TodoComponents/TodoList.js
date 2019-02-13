@@ -37,6 +37,18 @@ class TodoList extends React.Component {
       id: this.state.id,
       completed: this.state.completed,
     };
+    this.setState({
+      todo: [...this.state.todo, newTodo],
+      task: '',
+      id: '',
+      completed: '',
+    });
+  };
+  handleChanges = e => {
+    console.log(e.target.value);
+    this.setState({
+      [e.target.name]: e.target.value,
+    });
   };
 
   render() {
@@ -48,6 +60,13 @@ class TodoList extends React.Component {
             <Todo key={index} todo={todoFromMap} />
           ))}
         </div>
+        <TodoForm
+          addTodo={this.addTodo}
+          name={this.state.name}
+          task={this.state.task}
+          id={this.state.id}
+          completed={this.state.completed}
+        />
       </div>
     );
   }
