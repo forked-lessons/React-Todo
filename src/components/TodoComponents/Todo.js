@@ -1,12 +1,8 @@
-/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/jsx-filetask-extension */
 import React from 'react';
 
-function Todo(props) {
-  return (
-    <div className="todo">
-      <h3>{props.todo.task}</h3>
-    </div>
-  );
-}
+const Todo = props => {
+  return <div>{props.todo.task}</div>;
+};
 
 export default Todo;
