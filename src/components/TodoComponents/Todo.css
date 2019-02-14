@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+span {
+    color: #ad7d37;
+    font-family: 'Roboto', sans-serif;
+}
+
+.app-wrapper {
+    font-family: sans-serif;
+    text-align: center;
+    max-width: 665px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #334e30;
+    width: 100%;
+}
+
+.todo-list {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 25px;
+    line-height: 50px;
+    background-color: #2e557c;
+}
+
+.todo {
+    border-top: 2px solid black;
+}
+
+form {
+    width: 100%;
+    display: flex;
+}
+
+form>input {
+    font-size: 30px;
+    background: #7e7863;
+    width: 70%;
+}
+
+form>button {
+    width: 25%;
+    padding: 5px 30px;
+    font-size: 20px;
+    border: 2px solid #ad7d37;
+}
+
+.add-btn {
+    background-color: #2e557c;
+}
+
+.clear-btn {
+    background-color: #381010;
+    color: #7e7863;
+    padding: 0 30px;
+}
+
+input::placeholder {
+    font-size: 20px;
+}
